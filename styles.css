@@ -1,10 +1,15 @@
 body {
-    background: black no-repeat center center fixed;
+    background: url("./img/background.png") no-repeat center center fixed;
     background-size: cover;
 }
 @font-face {
     font-family: "Font1";
     src: url("./fonts/斗鱼追光体2.0.ttf");
+}
+@font-face {
+    font-family: "Font2-Black";
+    src: url("./fonts/NotoSerifSC-VF.ttf");
+    font-weight: 800;
 }
 .navigation {
     margin: 0;
@@ -60,7 +65,7 @@ body {
     text-decoration: none;
     margin-left: 20px;
     margin-right: 20px;
-    font-family: "Noto Serif SC Black", sans-serif;
+    font-family: "Font2-Black", sans-serif;
     color: white;
     font-size: 30px;
 }
@@ -102,4 +107,42 @@ body {
         opacity: 1;
         height: 60px;
     }
+}
+.Title-Main {
+    user-select: none;
+    width: 100%;
+    font-family: "Font1", sans-serif;
+    font-size: 80px;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    animation: title 0.5s ease-in-out 0.5s forwards;
+    margin: 0;
+}
+@keyframes title {
+    from {
+        opacity: 0;
+        transform: translateY(250px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(200px);
+    }
+}
+.Title-Sub {
+    user-select: none;
+    font-family: "Font2-Black", sans-serif;
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+    color: white;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 290px;
+    margin-right: 290px;
+    opacity: 0;
+    animation: title 0.5s ease-in-out 0.6s forwards;
 }
