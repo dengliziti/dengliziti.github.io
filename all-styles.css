@@ -11,6 +11,11 @@ body {
     src: url("./fonts/NotoSerifSC-VF.ttf");
     font-weight: 800;
 }
+@font-face {
+    font-family: "Font2-Regular";
+    src: url("./fonts/NotoSerifSC-VF.ttf");
+    font-weight: 400;
+}
 .navigation {
     margin: 0;
     width: 100%;
